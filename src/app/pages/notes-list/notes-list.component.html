@@ -1,0 +1,22 @@
+<div class="main-container">
+
+    <div class="search-bar">
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input" type="search" placeholder="search">
+                <span class="icon is-small is-left">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="notes-list">
+        <app-note-card *ngFor="let note of notes" title="note.title" body="note.body">
+        </app-note-card>
+
+        <button class="button floating-add-button is-primary" routerLink="new">+ ADD</button>
+
+    </div>
+
+</div>
